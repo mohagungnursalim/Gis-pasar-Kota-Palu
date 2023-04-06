@@ -82,11 +82,9 @@
         
     </div>
 
-    @push('ScriptMap')         
+            
     <script>
-     
      document.addEventListener('livewire:load', function () {
-
 
            // Set view
         const map = L.map('map').setView([-0.7322978,119.8630532], 13);
@@ -120,8 +118,7 @@
         //     alert(e.latlng);
         // });
         
-        
-
+ 
         // Circle
         const circle = L.circle([-0.7322978,119.8630532], {
             color: 'red',
@@ -141,7 +138,7 @@
 
         // })
        
-        // let marker = null;
+        let marker = null;
             map.on('click', (event)=> {
 
             // if(marker !== null){
@@ -156,14 +153,13 @@
 
             @this.lat = latitude
             @this.long = longitude
-
+     
             
-            
-            
-        })  
+            console.log(@this.lat,@this.long);
+        })       
 
      })
 
 
     </script>
-    @endpush
+   

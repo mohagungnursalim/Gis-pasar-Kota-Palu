@@ -14,6 +14,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @livewireStyles
+        
         @stack('MapCss')
     </head>
     <body class="font-sans antialiased">
@@ -36,9 +37,10 @@
             </main>
         </div>
         
-        @stack('ScriptMap')
+        
         @livewireScripts
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js"></script>
+        
         
         
     </body>
